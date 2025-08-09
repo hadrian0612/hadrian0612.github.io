@@ -20,4 +20,5 @@ gem "jekyll-include-cache"
 gem "jekyll-archives"       # 如果使用分类/标签
 gem "webrick"              # Ruby 3.0+ 必需
 gem "logger"               # 消除 Ruby 3.4 警告
+# gem 'bootstrap', '~> 5.3.2'
 # ------- mark -------

@@ -1,4 +1,4 @@
-name: Deploy Jekyll Site
+name: Deploy Jekyll Site to GitHub Pages
 
 on:
   push:
@@ -18,55 +18,59 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      # 1. 检出代码
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0  # 获取完整提交历史
+          submodules: recursive  # 包含主题子模块
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'  # 需与Gemfile一致
-          bundler-cache: true
-          cache-version: 3  # 更新缓存版本号
-
-      - name: Setup Node
+      # 2. 设置 Node.js 环境（用于 Bootstrap）
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '20'
+          cache: 'npm'
 
-      - name: Install dependencies
+      # 3. 安装前端依赖
+      - name: Install Bootstrap
         run: |
-          # 解决Windows路径问题
-          sudo apt-get install dos2unix
-          find . -type f -name "*.sh" -exec dos2unix {} \;
-          
-          # 安装依赖
-          npm install bootstrap @popperjs/core
-          bundle config path vendor/bundle
-          bundle install --retry 3 --jobs 4
-          bundle add webrick
-
-      - name: Prepare assets
-        run: |
-          mkdir -p _sass/vendors
+          npm install bootstrap@5.3.2 @popperjs/core
+          mkdir -p _sass/vendors assets/js
           cp -r node_modules/bootstrap/scss _sass/vendors/bootstrap
           cp node_modules/@popperjs/core/dist/umd/popper.min.js assets/js/
 
-      - name: Build site
+      # 4. 设置 Ruby 环境
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+          cache-version: 2  # 更新缓存版本号
+
+      # 5. 安装 Ruby 依赖
+      - name: Install Ruby gems
+        run: |
+          bundle config path vendor/bundle
+          bundle install --jobs 4 --retry 3
+          bundle add webrick  # Ruby 3+ 必需
+
+      # 6. 构建站点
+      - name: Build with Jekyll
         run: |
           bundle exec jekyll clean
           bundle exec jekyll build --trace --baseurl ""
-          # 统一路径格式
-          find _site -type f -exec sed -i 's/\\/\//g' {} \;
+          # 修复 Windows 路径问题
+          find _site -type f -name "*.html" -exec sed -i 's/\\/\//g' {} \;
         env:
           JEKYLL_ENV: production
 
+      # 7. 上传构建产物
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           name: jekyll-site
-          path: _site/
+          path: ./_site
 
   deploy:
     environment:
