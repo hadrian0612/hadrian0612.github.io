@@ -99,9 +99,10 @@ theme_mode: dark # [light | dark]
 #
 # e.g. 'https://cdn.com'
 # cdn: "https://chirpy-img.netlify.app"
+cdn: https://cdn.jsdelivr.net/gh/hadrian0612/image
 
 # the avatar on sidebar, support local or CORS resources
-avatar: "./assets/img/favicons/favicon.svg" # https://chirpy-img.netlify.app/commons/avatar.jpg
+avatar: "/favicons/favicon.svg" # https://chirpy-img.netlify.app/commons/avatar.jpg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
@@ -233,3 +234,5 @@ plugins:
   - jekyll-seo-tag
   - jekyll-include-cache
   - jekyll-archives
+
+# bundle exec jekyll serve
