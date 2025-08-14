@@ -1,0 +1,232 @@
+{
+  "main": {
+    "id": "ff380428c063bb5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "a63a9db81b1bf2c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ebf1caff79f48a2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "paper_note/robotics/2025-08-14-2410_LAPA.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-08-14-2410_LAPA"
+            }
+          },
+          {
+            "id": "39af2a6b31518943",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "course_note/wangshusen/2025-08-14-transformer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-08-14-transformer"
+            }
+          },
+          {
+            "id": "3b4ef723b56a55ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "templates/2025-08-14-1706_Transformer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2025-08-14-1706_Transformer"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "29ef83a5ed66119a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c9e23aa8ff12f510",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e642ee70fe09f036",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "7a74c40291cd9e4b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:paper_reading",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "59d364a11e6c0280",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 241.5
+  },
+  "right": {
+    "id": "21dff7f7c95cfcd9",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac37b0a5763e9780",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "322f8e6dd98b397d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "original/2019-08-08-text-and-typography.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2019-08-08-text-and-typography"
+            }
+          },
+          {
+            "id": "a47997777d798d19",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "original/2019-08-08-text-and-typography.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2019-08-08-text-and-typography"
+            }
+          },
+          {
+            "id": "af3580c09198f0d5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "23544132d2462408",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "original/2019-08-08-text-and-typography.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2019-08-08-text-and-typography"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "e642ee70fe09f036",
+  "lastOpenFiles": [
+    "templates/2025-08-14-1706_Transformer.md",
+    "course_note/wangshusen/2025-08-14-transformer.md",
+    "course_note/wangshusen",
+    "course_note",
+    "paper_note/basics/2025-08-14-1711_VQ-VAE.md",
+    "concepts",
+    "paper_note/robotics/2025-08-14-2410_LAPA.md",
+    "paper_note/aigc",
+    "paper_note/basics",
+    "paper_note/robotics",
+    "original/2019-08-08-text-and-typography.md",
+    "basics/2025-08-10-linux-syntax.md",
+    "templates/image.png",
+    "templates/2025-08-14-2410_LAPA.md",
+    "paper_note/2410-LAPA.md",
+    "paper_note/LAPA.md",
+    "templates",
+    "basics/2025-08-10-markdown-syntax.md",
+    "paper_note",
+    "basics/2025-08-10-latex-syntax.md",
+    "basics/2025-08-10-mermaid-syntax.md",
+    "basics",
+    "2025-01-13-cursor-usage-guide.md",
+    "original/2019-08-11-customize-the-favicon.md",
+    "Pasted image 20250813212012.png",
+    "original",
+    "screenshot_20250813_203709.png",
+    "original/2019-08-09-getting-started.md",
+    "original/2019-08-08-write-a-new-post.md"
+  ]
+}
